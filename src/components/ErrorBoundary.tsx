@@ -22,7 +22,7 @@ class ErrorBoundary extends Component<Props, State> {
     render(): ReactNode {
         const { error } = this.state
         if (error) {
-            //Sentry.captureException(error)
+            // Sentry.captureException(error)
             return <ErrorBoundaryFallbackComponent />
         }
         return this.props.children
