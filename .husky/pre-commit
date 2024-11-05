@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+npm run lint
+echo "***Running unit tests***"
+unset ELECTRON_RUN_AS_NODE
+npm run cy:test
+npm version patch --no-git-tag-version
+git add && git add package.json && git add package-lock.json
