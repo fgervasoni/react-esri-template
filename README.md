@@ -18,4 +18,4 @@ Un template per iniziare rapidamente con un progetto React e TypeScript, complet
 
 Per creare un nuovo progetto utilizzando questo template, esegui il seguente comando:
 ```sh
-npx degit fgervasoni/react-ts-template "my-project"
+npx degit fgervasoni/react-esri-template "my-project"
